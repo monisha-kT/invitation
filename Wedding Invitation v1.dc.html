@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyadharsan &amp; Monisha — 17 September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FFF7F0; color: #3B2A2F; -webkit-font-smoothing: antialiased; }
+  a { color: #8A1538; text-decoration: none; }
+  a:hover { color: #C08A3E; }
+  ::selection { background: #F3D9C6; }
+  [data-r] { display: flex; align-items: center; }
+  [data-r="flip"] { flex-direction: row-reverse; }
+  @media (max-width: 880px) {
+    [data-r], [data-r="flip"] { flex-direction: column; text-align: center; }
+    [data-r] [data-copy] { align-items: center; }
+  }
+  @keyframes fall { 0% { transform: translateY(-8vh) rotate(0deg); opacity: 0 } 10% { opacity: .75 } 100% { transform: translateY(108vh) rotate(320deg); opacity: 0 } }
+  @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-14px) } }
+  @keyframes pulse { 0%,100% { opacity: .35 } 50% { opacity: .9 } }
+</style>
+</helmet>
+
+<div style="position:relative;overflow-x:hidden;font-family:Jost,system-ui,sans-serif">
+
+  <sc-if value="{{ showPetals }}" hint-placeholder-val="{{ true }}">
+    <div aria-hidden="true" style="position:fixed;inset:0;pointer-events:none;z-index:3;overflow:hidden">
+      <div style="position:absolute;left:6%;top:0;width:13px;height:13px;background:#F0BFC8;border-radius:60% 20% 60% 20%;animation:fall 15s linear infinite"></div>
+      <div style="position:absolute;left:19%;top:0;width:9px;height:9px;background:#EED6B8;border-radius:60% 20% 60% 20%;animation:fall 19s linear -4s infinite"></div>
+      <div style="position:absolute;left:33%;top:0;width:15px;height:15px;background:#F3CBD3;border-radius:60% 20% 60% 20%;animation:fall 22s linear -9s infinite"></div>
+      <div style="position:absolute;left:47%;top:0;width:8px;height:8px;background:#E7C6A0;border-radius:60% 20% 60% 20%;animation:fall 17s linear -2s infinite"></div>
+      <div style="position:absolute;left:61%;top:0;width:12px;height:12px;background:#F0BFC8;border-radius:60% 20% 60% 20%;animation:fall 24s linear -12s infinite"></div>
+      <div style="position:absolute;left:74%;top:0;width:10px;height:10px;background:#F3CBD3;border-radius:60% 20% 60% 20%;animation:fall 20s linear -6s infinite"></div>
+      <div style="position:absolute;left:88%;top:0;width:14px;height:14px;background:#EED6B8;border-radius:60% 20% 60% 20%;animation:fall 16s linear -14s infinite"></div>
+      <div style="position:absolute;left:95%;top:0;width:9px;height:9px;background:#F0BFC8;border-radius:60% 20% 60% 20%;animation:fall 26s linear -3s infinite"></div>
+    </div>
+  </sc-if>
+
+  <div style="position:fixed;right:16px;bottom:16px;z-index:20;display:flex;flex-direction:column;gap:10px">
+    <button onClick="{{ toggleMusic }}" title="Background music" style="width:46px;height:46px;border-radius:50%;border:1px solid #EBD6C4;background:#FFFCF8;color:#8A1538;font:400 17px/1 Jost;cursor:pointer;box-shadow:0 6px 18px rgba(92,15,43,.12)" style-hover="background:#FFF3E9;border-color:#C08A3E">{{ musicIcon }}</button>
+    <button onClick="{{ share }}" title="Share on WhatsApp" style="width:46px;height:46px;border-radius:50%;border:1px solid #EBD6C4;background:#FFFCF8;color:#8A1538;font:400 15px/1 Jost;cursor:pointer;box-shadow:0 6px 18px rgba(92,15,43,.12)" style-hover="background:#FFF3E9;border-color:#C08A3E">↗</button>
+  </div>
+  <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;right:74px;bottom:22px;z-index:20;font:300 12px/1.5 Jost;color:#8A6A55;background:#FFFCF8;border:1px solid #EBD6C4;border-radius:16px;padding:9px 14px;max-width:210px;box-shadow:0 6px 18px rgba(92,15,43,.1)">{{ toast }}</div>
+  </sc-if>
+
+  <!-- HERO -->
+  <section style="position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 22px 40px;background:radial-gradient(120% 90% at 50% 0%, #FFFDFB 0%, #FFF3E8 46%, #FBE7DC 100%)">
+    <div style="position:absolute;inset:0;background:radial-gradient(60% 40% at 50% 78%, rgba(240,191,200,.35), transparent 70%);pointer-events:none"></div>
+    <div style="position:relative;font:500 11px/1 Jost;letter-spacing:.42em;text-transform:uppercase;color:#C08A3E">Together with our families</div>
+    <h1 style="position:relative;margin:16px 0 0;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(40px,7.4vw,86px);line-height:.98;color:#5C0F2B;letter-spacing:-.01em">Priyadharsan<span style="display:block;font-style:italic;font-size:.46em;color:#C08A3E;margin:.16em 0;letter-spacing:.04em">and</span>Monisha</h1>
+    <div style="position:relative;width:min(330px,54vw);margin:14px auto 0">
+      <img src="stickers/hearthands.png" alt="Priyadharsan and Monisha" style="width:100%;max-height:34svh;object-fit:contain;display:block;mix-blend-mode:multiply;animation:bob 7s ease-in-out infinite">
+    </div>
+    <div style="position:relative;margin-top:12px;display:flex;align-items:center;gap:16px;font:300 clamp(14px,2.4vw,19px)/1 Jost;letter-spacing:.3em;text-transform:uppercase;color:#5C0F2B">
+      <span style="width:34px;height:1px;background:#DDBFA6"></span>17 September 2026<span style="width:34px;height:1px;background:#DDBFA6"></span>
+    </div>
+    <div style="position:relative;margin-top:10px;font:300 14px/1.6 Jost;color:#8A6A55">Sri Venkateswara Mahal · Thuraiyur</div>
+    <a href="#story" style="position:relative;margin-top:22px;font:400 11px/1 Jost;letter-spacing:.3em;text-transform:uppercase;color:#8A6A55;animation:pulse 2.8s ease-in-out infinite">Scroll our story ↓</a>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <sc-if value="{{ showCountdown }}" hint-placeholder-val="{{ true }}">
+    <section style="padding:clamp(44px,7vw,76px) 22px;background:#5C0F2B;color:#FFF3E8;text-align:center">
+      <div style="font:500 11px/1 Jost;letter-spacing:.4em;text-transform:uppercase;color:#E0AE72">Counting down to forever</div>
+      <div style="margin:26px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(18px,5vw,58px);max-width:760px">
+        <div style="min-width:76px"><div style="font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7vw,62px);line-height:1">{{ cdD }}</div><div style="font:300 11px/1 Jost;letter-spacing:.3em;text-transform:uppercase;color:#D8AE96;margin-top:8px">Days</div></div>
+        <div style="min-width:76px"><div style="font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7vw,62px);line-height:1">{{ cdH }}</div><div style="font:300 11px/1 Jost;letter-spacing:.3em;text-transform:uppercase;color:#D8AE96;margin-top:8px">Hours</div></div>
+        <div style="min-width:76px"><div style="font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7vw,62px);line-height:1">{{ cdM }}</div><div style="font:300 11px/1 Jost;letter-spacing:.3em;text-transform:uppercase;color:#D8AE96;margin-top:8px">Minutes</div></div>
+        <div style="min-width:76px"><div style="font-family:'Cormorant Garamond',serif;font-size:clamp(38px,7vw,62px);line-height:1">{{ cdS }}</div><div style="font:300 11px/1 Jost;letter-spacing:.3em;text-transform:uppercase;color:#D8AE96;margin-top:8px">Seconds</div></div>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- STORY -->
+  <section id="story" style="padding:clamp(56px,9vw,110px) 22px 20px;text-align:center">
+    <div style="font:500 11px/1 Jost;letter-spacing:.4em;text-transform:uppercase;color:#C08A3E">Our story</div>
+    <h2 style="margin:16px 0 0;font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:clamp(28px,5vw,48px);color:#5C0F2B">From strangers to soulmates</h2>
+  </section>
+
+  <div style="max-width:1040px;margin:0 auto;padding:0 22px 40px;display:flex;flex-direction:column;gap:clamp(30px,5vw,58px)">
+
+    <div data-rev data-r style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(330px,76vw)"><img src="stickers/hello.png" alt="Saying hello" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 8s ease-in-out infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter One</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">A quiet December day</h3>
+        <p style="margin:0;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">Two strangers exchanged a simple “Hello,” never imagining that one small conversation would change their lives forever.</p>
+      </div>
+    </div>
+
+    <div data-rev data-r="flip" style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(330px,76vw)"><img src="stickers/chats.png" alt="Long conversations over coffee" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 9s ease-in-out -1s infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter Two</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">Every day, a little longer</h3>
+        <p style="margin:0;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">Morning messages turned into late-night phone calls. Coffee breaks became moments we looked forward to. Laughter slowly replaced silence, and every notification brought a smile.</p>
+      </div>
+    </div>
+
+    <div data-rev data-r style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(330px,76vw)"><img src="stickers/newyear.png" alt="Meeting on New Year's evening" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 8.5s ease-in-out -2s infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter Three</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">The first time we met</h3>
+        <p style="margin:0;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">On a magical New Year’s evening the world faded away, and we smiled at each other beneath sparkling lights. What began as friendship had quietly turned into something much deeper.</p>
+      </div>
+    </div>
+
+    <div data-rev data-r="flip" style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(330px,76vw)"><img src="stickers/grew.png" alt="Growing together" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 9.5s ease-in-out -3s infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter Four</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">Side by side</h3>
+        <p style="margin:0;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">Days became months. Every challenge felt lighter because we faced it together. Every success felt sweeter because we celebrated together. Every dream became a shared dream.</p>
+      </div>
+    </div>
+
+    <div data-rev data-r style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(330px,76vw)"><img src="stickers/propose.png" alt="The proposal" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 8s ease-in-out -4s infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter Five</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">One question</h3>
+        <p style="margin:0 0 14px;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">With love in his heart and hope in his eyes, Priyadharsan knelt down and asked the one question that mattered most.</p>
+        <p style="margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(22px,3vw,30px);line-height:1.3;color:#8A1538">“Will you spend forever with me?”</p>
+      </div>
+    </div>
+
+    <div data-rev data-r="flip" style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(300px,70vw)"><img src="stickers/yes.png" alt="She said yes" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 7.5s ease-in-out -1.5s infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter Six</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">One answer</h3>
+        <p style="margin:0;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">With a shy smile, happy tears, and a heart full of love, Monisha said <em style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5em;color:#8A1538">yes.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAREERS -->
+  <section data-rev style="background:#FFFCF8;border-top:1px solid #F2E2D5;border-bottom:1px solid #F2E2D5;padding:clamp(50px,8vw,86px) 22px;text-align:center">
+    <div style="font:500 11px/1 Jost;letter-spacing:.4em;text-transform:uppercase;color:#C08A3E">Chapter Seven</div>
+    <h2 style="margin:14px 0 8px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,4vw,40px);color:#5C0F2B">As our dreams unfolded</h2>
+    <p style="margin:0 auto;max-width:52ch;font:300 15px/1.8 Jost;color:#6B5147">Two careers, two passions, one direction — forward, together.</p>
+    <div style="margin:34px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(18px,4vw,44px);max-width:860px">
+      <div style="flex:1 1 300px;max-width:380px">
+        <img src="stickers/tcs.png" alt="Priyadharsan at work" style="width:100%;display:block;mix-blend-mode:multiply">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#5C0F2B;margin-top:6px">Priyadharsan K</div>
+        <div style="font:300 14px/1.7 Jost;color:#8A6A55">System Engineer · TCS</div>
+      </div>
+      <div style="flex:1 1 300px;max-width:380px">
+        <img src="stickers/algen.png" alt="Monisha at work" style="width:100%;display:block;mix-blend-mode:multiply">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#5C0F2B;margin-top:6px">Monisha K</div>
+        <div style="font:300 14px/1.7 Jost;color:#8A6A55">Software Developer · ALGEN.AI</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMILIES -->
+  <section style="padding:clamp(56px,9vw,100px) 22px;text-align:center">
+    <div style="font:500 11px/1 Jost;letter-spacing:.4em;text-transform:uppercase;color:#C08A3E">Chapter Eight</div>
+    <h2 style="margin:14px 0 10px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(28px,4.4vw,44px);color:#5C0F2B">Two families, one bond</h2>
+    <p style="margin:0 auto 30px;max-width:50ch;font:300 15px/1.85 Jost;color:#6B5147;text-wrap:pretty">Soon our love found its way into our families. Smiles became blessings. Blessings became promises. Not just the union of two hearts — the coming together of two families.</p>
+    <div data-rev style="width:min(720px,92vw);margin:0 auto"><img src="stickers/twofamilies.png" alt="Both families together" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 10s ease-in-out infinite"></div>
+    <div style="margin:26px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(16px,4vw,40px);max-width:820px">
+      <div data-rev style="flex:1 1 260px;max-width:340px;border:1px solid #F0DECE;background:#FFFCF8;border-radius:4px;padding:26px 22px">
+        <div style="font:500 10px/1 Jost;letter-spacing:.32em;text-transform:uppercase;color:#C08A3E">Groom’s parents</div>
+        <div style="margin-top:10px;font-family:'Cormorant Garamond',serif;font-size:clamp(21px,2.6vw,26px);line-height:1.4;color:#5C0F2B">Kumar M &amp; Vijayarani K</div>
+      </div>
+      <div data-rev style="flex:1 1 260px;max-width:340px;border:1px solid #F0DECE;background:#FFFCF8;border-radius:4px;padding:26px 22px">
+        <div style="font:500 10px/1 Jost;letter-spacing:.32em;text-transform:uppercase;color:#C08A3E">Bride’s parents</div>
+        <div style="margin-top:10px;font-family:'Cormorant Garamond',serif;font-size:clamp(21px,2.6vw,26px);line-height:1.4;color:#5C0F2B">Krishnan JC &amp; Tamilarasi K</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHOOSING THE DATE -->
+  <div style="max-width:1040px;margin:0 auto;padding:0 22px clamp(40px,7vw,80px)">
+    <div data-rev data-r style="gap:clamp(18px,4vw,54px)">
+      <div style="flex:0 0 auto;width:min(340px,78vw)"><img src="stickers/date.png" alt="Choosing the wedding date" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 8.5s ease-in-out infinite"></div>
+      <div data-copy style="flex:1 1 300px;display:flex;flex-direction:column">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#C08A3E">Chapter Nine</div>
+        <h3 style="margin:10px 0 12px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(26px,3.6vw,38px);line-height:1.15;color:#5C0F2B">Choosing forever</h3>
+        <p style="margin:0;font:300 clamp(15px,1.6vw,17px)/1.85 Jost;color:#6B5147;max-width:44ch;text-wrap:pretty">Then came the most beautiful decision of all — choosing a day that would become the beginning of forever. A day we will remember for the rest of our lives.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVENTS -->
+  <section id="events" style="background:#5C0F2B;color:#FFF3E8;padding:clamp(56px,9vw,104px) 22px;text-align:center">
+    <div style="font:500 11px/1 Jost;letter-spacing:.4em;text-transform:uppercase;color:#E0AE72">The celebrations</div>
+    <h2 style="margin:14px 0 6px;font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:clamp(28px,4.6vw,46px);color:#FFF3E8">Three days of joy</h2>
+    <div style="margin:36px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(16px,3vw,28px);max-width:1040px">
+
+      <div data-rev style="flex:1 1 280px;max-width:330px;border:1px solid rgba(224,174,114,.36);border-radius:4px;padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#E0AE72">Engagement</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1">16 September</div>
+        <div style="font:300 14px/1 Jost;letter-spacing:.18em;color:#D8AE96">2026 · 5:00 – 6:00 PM</div>
+        <p style="margin:8px 0 0;font:300 14px/1.8 Jost;color:#EAD2C4;max-width:30ch">Celebrate the beautiful beginning of our forever.</p>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Priyadharsan%20%26%20Monisha%20%E2%80%94%20Engagement&amp;dates=20260916T113000Z/20260916T123000Z&amp;location=Sri%20Venkateswara%20Mahal%2C%20Thuraiyur" target="_blank" rel="noopener" style="margin-top:12px;font:400 11px/1 Jost;letter-spacing:.22em;text-transform:uppercase;color:#E0AE72;border-bottom:1px solid rgba(224,174,114,.5);padding-bottom:5px" style-hover="color:#FFF3E8;border-color:#FFF3E8">Add to calendar</a>
+      </div>
+
+      <div data-rev style="flex:1 1 280px;max-width:330px;border:1px solid #E0AE72;background:rgba(255,243,232,.06);border-radius:4px;padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#E0AE72">Wedding</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1">17 September</div>
+        <div style="font:300 14px/1 Jost;letter-spacing:.18em;color:#D8AE96">Muhurtham · 4:00 – 5:00 AM</div>
+        <p style="margin:8px 0 0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;line-height:1.5;color:#FFF3E8">Two hearts. One promise.<br>Forever begins.</p>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Priyadharsan%20%26%20Monisha%20%E2%80%94%20Wedding%20Muhurtham&amp;dates=20260916T223000Z/20260916T233000Z&amp;location=Sri%20Venkateswara%20Mahal%2C%20Thuraiyur" target="_blank" rel="noopener" style="margin-top:12px;font:400 11px/1 Jost;letter-spacing:.22em;text-transform:uppercase;color:#E0AE72;border-bottom:1px solid rgba(224,174,114,.5);padding-bottom:5px" style-hover="color:#FFF3E8;border-color:#FFF3E8">Add to calendar</a>
+      </div>
+
+      <div data-rev style="flex:1 1 280px;max-width:330px;border:1px solid rgba(224,174,114,.36);border-radius:4px;padding:30px 24px;display:flex;flex-direction:column;align-items:center;gap:10px">
+        <div style="font:500 10px/1 Jost;letter-spacing:.34em;text-transform:uppercase;color:#E0AE72">Reception</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.1">17 September</div>
+        <div style="font:300 14px/1 Jost;letter-spacing:.18em;color:#D8AE96">2026 · 9:00 – 10:00 AM</div>
+        <p style="margin:8px 0 0;font:300 14px/1.8 Jost;color:#EAD2C4;max-width:30ch">Join us as we celebrate love, laughter, and the start of a lifetime.</p>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Priyadharsan%20%26%20Monisha%20%E2%80%94%20Reception&amp;dates=20260917T033000Z/20260917T043000Z&amp;location=Sri%20Venkateswara%20Mahal%2C%20Thuraiyur" target="_blank" rel="noopener" style="margin-top:12px;font:400 11px/1 Jost;letter-spacing:.22em;text-transform:uppercase;color:#E0AE72;border-bottom:1px solid rgba(224,174,114,.5);padding-bottom:5px" style-hover="color:#FFF3E8;border-color:#FFF3E8">Add to calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section style="padding:clamp(56px,9vw,100px) 22px;text-align:center;background:linear-gradient(180deg,#FFF7F0 0%,#FDEFE4 100%)">
+    <div style="font:500 11px/1 Jost;letter-spacing:.4em;text-transform:uppercase;color:#C08A3E">The venue</div>
+    <h2 style="margin:14px 0 6px;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(30px,5vw,50px);color:#5C0F2B">Sri Venkateswara Mahal</h2>
+    <div style="font:300 15px/1.8 Jost;letter-spacing:.22em;text-transform:uppercase;color:#8A6A55">Thuraiyur</div>
+    <div data-rev style="width:min(420px,80vw);margin:22px auto 0"><img src="stickers/invited.png" alt="You're invited" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 9s ease-in-out infinite"></div>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Sri+Venkateswara+Mahal+Thuraiyur" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;margin-top:22px;padding:16px 30px;min-height:48px;background:#5C0F2B;color:#FFF3E8;border-radius:999px;font:400 12px/1 Jost;letter-spacing:.26em;text-transform:uppercase;box-shadow:0 10px 26px rgba(92,15,43,.2)" style-hover="background:#8A1538;color:#FFF3E8">◈ Tap to navigate</a>
+    <div style="margin-top:14px;font:300 13px/1.7 Jost;color:#9A7C68">Opens in Google Maps</div>
+  </section>
+
+  <!-- FINALE -->
+  <section style="padding:clamp(56px,9vw,110px) 22px clamp(40px,6vw,70px);text-align:center;background:radial-gradient(90% 70% at 50% 20%, #FFFDFB 0%, #FDEFE4 70%, #FAE3D6 100%)">
+    <div data-rev style="width:min(660px,92vw);margin:0 auto"><img src="stickers/arch.png" alt="Priyadharsan and Monisha beneath a floral arch" style="width:100%;display:block;mix-blend-mode:multiply;animation:bob 11s ease-in-out infinite"></div>
+    <p data-rev style="margin:24px auto 0;max-width:56ch;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(19px,2.6vw,27px);line-height:1.65;color:#5C0F2B;text-wrap:pretty">With immense joy and grateful hearts, we invite you to celebrate the beginning of our forever. Your love, blessings, and presence will make our special day truly unforgettable.</p>
+    <div style="margin:26px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+      <button onClick="{{ share }}" style="min-height:48px;padding:15px 28px;border:1px solid #5C0F2B;background:transparent;color:#5C0F2B;border-radius:999px;font:400 12px/1 Jost;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap;cursor:pointer" style-hover="background:#5C0F2B;color:#FFF3E8">Share on WhatsApp</button>
+      <a href="#events" style="min-height:48px;display:inline-flex;align-items:center;padding:15px 28px;border:1px solid #DDBFA6;color:#8A6A55;border-radius:999px;font:400 12px/1 Jost;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap" style-hover="border-color:#C08A3E;color:#5C0F2B">See the details</a>
+    </div>
+    <div style="margin:44px auto 0;width:60px;height:1px;background:#DDBFA6"></div>
+    <div style="margin-top:26px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(24px,4vw,36px);color:#8A1538">Priyadharsan &amp; Monisha</div>
+    <div style="margin-top:8px;font:300 11px/1.8 Jost;letter-spacing:.3em;text-transform:uppercase;color:#9A7C68">17 · 09 · 2026 · Thuraiyur</div>
+  </section>
+
+  <audio ref="{{ audioRef }}" src="music/theme.mp3" loop preload="none"></audio>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPetals&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Atmosphere&quot;},&quot;showCountdown&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Atmosphere&quot;}}">
+class Component extends DCLogic {
+  state = { cd: null, musicOn: false, toast: '' };
+
+  componentDidMount() {
+    this.audio = null;
+    this.target = new Date('2026-09-16T22:30:00Z').getTime();
+    this.tick();
+    this.timer = setInterval(() => this.tick(), 1000);
+
+    const vh = window.innerHeight;
+    let pending = Array.from(document.querySelectorAll('[data-rev]')).filter((el) => {
+      if (el.getBoundingClientRect().top < vh * 0.9) return false;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity .9s cubic-bezier(.22,.7,.3,1), transform 1s cubic-bezier(.22,.7,.3,1)';
+      return true;
+    });
+    const show = (el) => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    const sweep = () => {
+      const h = window.innerHeight;
+      pending = pending.filter((el) => {
+        if (el.getBoundingClientRect().top < h * 0.88) { show(el); return false; }
+        return true;
+      });
+      this.raf = pending.length ? requestAnimationFrame(sweep) : null;
+    };
+    this.raf = requestAnimationFrame(sweep);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    if (this.raf) cancelAnimationFrame(this.raf);
+  }
+
+  tick() {
+    const diff = Math.max(0, this.target - Date.now());
+    const s = Math.floor(diff / 1000);
+    this.setState({ cd: {
+      d: String(Math.floor(s / 86400)).padStart(2, '0'),
+      h: String(Math.floor(s / 3600) % 24).padStart(2, '0'),
+      m: String(Math.floor(s / 60) % 60).padStart(2, '0'),
+      s: String(s % 60).padStart(2, '0')
+    }});
+  }
+
+  flash(msg) {
+    this.setState({ toast: msg });
+    clearTimeout(this.toastT);
+    this.toastT = setTimeout(() => this.setState({ toast: '' }), 4000);
+  }
+
+  renderVals() {
+    const cd = this.state.cd || { d: '--', h: '--', m: '--', s: '--' };
+    return {
+      showPetals: this.props.showPetals ?? true,
+      showCountdown: this.props.showCountdown ?? true,
+      cdD: cd.d, cdH: cd.h, cdM: cd.m, cdS: cd.s,
+      toast: this.state.toast,
+      audioRef: (el) => { this.audio = el; },
+      musicIcon: this.state.musicOn ? '❙❙' : '♪',
+      toggleMusic: () => {
+        const a = this.audio;
+        if (!a) return;
+        if (this.state.musicOn) { a.pause(); this.setState({ musicOn: false }); return; }
+        a.volume = 0.35;
+        const p = a.play();
+        if (p && p.catch) {
+          p.then(() => this.setState({ musicOn: true }))
+           .catch(() => this.flash('Add your song at music/theme.mp3 to enable background music.'));
+        } else { this.setState({ musicOn: true }); }
+      },
+      share: () => {
+        const text = 'Priyadharsan & Monisha are getting married — 17 September 2026, Sri Venkateswara Mahal, Thuraiyur. ' + location.href;
+        window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
